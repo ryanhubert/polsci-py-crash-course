@@ -1,4 +1,4 @@
-# UCD PS Python Crash Course
+# Python Crash Course for Social Scientists
 
 This GitHub repository contains materials for a short Python crash course prepared for UC Davis Political Science graduate students. It is designed to be as accessible as possible to students who are familiar with object-oriented programming in R, but not with programming more generally.
 
@@ -52,9 +52,35 @@ If you have another installation of Python on your machine and you are comfortab
 
 I strongly recommend that you install Python 3, although, there is some debate about this.
 
-We will use several Python modules. (These are like libraries in R.) If you are using the Anaconda distribution, you should always try to install these modules via `conda install MODULENAME`.
+We will use several Python modules, also called "packages." These are the Python 
+equivalent to libraries in R. If you use Anaconda, you will need to familiarize
+yourself with Anaconda's package management system. See [Managing 
+Packages](https://conda.io/docs/user-guide/tasks/manage-pkgs.html) in the 
+Anaconda documentation.
 
-If you get an error message saying that the package cannot be found, then do this instead: `pip install MODULENAME`.
+If you'd prefer not to read that documentation and just want someone to tell you
+what to do, you should do the following:
+1. Make sure your Anaconda installation is up-to-date.
+2. Find the "Anaconda Navigator" app on your computer and open it.
+3. Navigate to Environments.
+4. Click on "Create".
+5. You can make different "environments" for different projects (see 
+[here](https://conda.io/docs/user-guide/concepts.html#conda-environments) and
+[here](https://conda.io/docs/user-guide/tasks/manage-environments.html)) but 
+for now, you should just make one for your all-purpose use. Name it something 
+intuitive, like your preferred username.
+6. Check the box for Python and select 3.6 (or the most recent version that you 
+want).
+7. Open your new environment and install the following packages: `keyring` 
+`boxsdk` `selenium` `beautifulsoup4` and `nltk`
+
+If you do find that any of these packages are available to install, you'll need 
+to read and carefully follow the instructions under [Installing packages from 
+Anaconda.org](https://conda.io/docs/user-guide/tasks/manage-pkgs.html#installing-packages-from-anaconda-org) 
+and/or [Installing non-conda packages](https://conda.io/docs/user-guide/tasks/manage-pkgs.html#installing-packages-from-anaconda-org).
+
+This should be sufficient to get you started with the stuff we'll use in this 
+crash course.
 
 ## Selenium
 
