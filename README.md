@@ -10,7 +10,11 @@ Google will be your best friend. If you encounter any problems while programming
 
 # More training
 
-If you want to pursue programming in more detail, I am always happy to help guide you to the appropriate resources. There are also many great tutorials and online courses. For example, the D-Lab at UC Berkeley has a great bootcamp on Python: [https://github.com/dlab-berkeley/python-fundamentals](https://github.com/dlab-berkeley/python-fundamentals)
+If you want to pursue programming in more detail, I am always happy to help guide you to the appropriate resources. There are also many great tutorials and online courses. For example:
+- [Python Fundamentals at UC Berkeley D-Lab](https://github.com/dlab-berkeley/python-fundamentals) (free)
+- [Professor Bernhard's PS239T course at UC Berkeley](https://github.com/ribernhard/PS239T)
+- [DataCamp](https://learn.datacamp.com/) (partially free)
+- [Codecademy](https://www.codecademy.com/) (paid)
 
 I am partial to [Learn Python The Hard Way](https://learnpythonthehardway.org), although it's no longer free...
 
@@ -22,7 +26,7 @@ Whether we like it or not, computers are essential to our lives. They are also i
 
 **Get comfortable with the command line.** It may seem weird, but working in the command line can end up being _easier_ than pointing and clicking.
 
-**Always write in plain text.** Get a good text editor (I recommend [Atom](https://atom.io) or [Sublime Text](https://www.sublimetext.com/)), and learn some basic [markdown](https://guides.github.com/features/mastering-markdown/). Use LaTeX for writing papers. [ShareLatex](https://www.sharelatex.com/) is a great collaborative LaTeX environment---it's the Google Drive of LaTeX.
+**Always write in plain text.** Get a good text editor (I recommend [Atom](https://atom.io) or [Sublime Text](https://www.sublimetext.com/)), and learn some basic [markdown](https://guides.github.com/features/mastering-markdown/). Use LaTeX for writing papers. [Overleaf](https://www.overleaf.com/) is a great collaborative LaTeX environment---it's the Google Drive of LaTeX.
 
 **Keep your files organized and well-named.** Do not use spaces or punctuation in file names, except for underscores and hyphens.
 
@@ -44,43 +48,19 @@ These instructions work for "typical" macOS installations, but there is no guara
 
 ## Python
 
-I recommend you install the Python 3.X version of the [Anaconda python distribution](https://www.anaconda.com/download/).
+I recommend you install Python 3.X and use [PyCharm](https://www.jetbrains.com/pycharm/) 
+as your interactive Python interpreter. It is free to students.
 
-If you have a Windows machine, be sure to check the option for **Make Anaconda the default Python**.
+Note: Python comes pre-installed on macOS machines, but it is often not up-to-date. 
 
-If you have another installation of Python on your machine and you are comfortable with that, you do not need to install Anaconda. For example, Python comes pre-installed on macOS machines.
-
-I strongly recommend that you install Python 3, although, there is some debate about this.
+I strongly recommend that you install Python 3, and I do not recommend you use Python 2.
 
 We will use several Python modules, also called "packages." These are the Python 
-equivalent to libraries in R. If you use Anaconda, you will need to familiarize
-yourself with Anaconda's package management system. See [Managing 
-Packages](https://conda.io/docs/user-guide/tasks/manage-pkgs.html) in the 
-Anaconda documentation.
+equivalent to libraries in R. If you use PyCharm, you should familiarize
+yourself with its package management system. See the [PyCharm docs](https://www.jetbrains.com/help/pycharm/installing-uninstalling-and-upgrading-packages.html#packages-tool-window) for more information.
 
-If you'd prefer not to read that documentation and just want someone to tell you
-what to do, you should do the following:
-1. Make sure your Anaconda installation is up-to-date.
-2. Find the "Anaconda Navigator" app on your computer and open it.
-3. Navigate to Environments.
-4. Click on "Create".
-5. You can make different "environments" for different projects (see 
-[here](https://conda.io/docs/user-guide/concepts.html#conda-environments) and
-[here](https://conda.io/docs/user-guide/tasks/manage-environments.html)) but 
-for now, you should just make one for your all-purpose use. Name it something 
-intuitive, like your preferred username.
-6. Check the box for Python and select 3.6 (or the most recent version that you 
-want).
-7. Open your new environment and install the following packages: `keyring` 
-`boxsdk` `selenium` `beautifulsoup4` and `nltk`
-
-If you do find that any of these packages are available to install, you'll need 
-to read and carefully follow the instructions under [Installing packages from 
-Anaconda.org](https://conda.io/docs/user-guide/tasks/manage-pkgs.html#installing-packages-from-anaconda-org) 
-and/or [Installing non-conda packages](https://conda.io/docs/user-guide/tasks/manage-pkgs.html#installing-packages-from-anaconda-org).
-
-This should be sufficient to get you started with the stuff we'll use in this 
-crash course.
+To get you started with the stuff we'll use in this crash course, you should install the 
+following packages: `keyring` `boxsdk` `selenium` `beautifulsoup4` and `nltk`.
 
 ## Selenium
 
@@ -88,7 +68,7 @@ We will use `selenium` to perform some basic webscraping in a Firefox browser. I
 
 Selenium also requires something called `geckodriver`. You can download it [here](https://github.com/mozilla/geckodriver/releases).
 
-Place the `geckodriver` file in your PATH. If you have installed Anaconda and you are using macOS, you _should_ be able to place the file in `/anaconda/bin` with no trouble. If you encounter problems with the `geckodriver`, this [StackOverflow thread](https://stackoverflow.com/questions/40208051/selenium-using-python-geckodriver-executable-needs-to-be-in-path) may help.
+Place the `geckodriver` file in your PATH. If you encounter problems with the `geckodriver`, this [StackOverflow thread](https://stackoverflow.com/questions/40208051/selenium-using-python-geckodriver-executable-needs-to-be-in-path) may help.
 
 Finally, at your command line, execute `pip install selenium` to install the `selenium` Python module.
 
